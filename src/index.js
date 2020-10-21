@@ -45,7 +45,6 @@ async function getWeather(location) {
   const urlLink = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=4dc55b39eebd848607f246ce75cffecd`;
   const response = await fetch(urlLink, { mode: 'cors' });
   const weatherData = await response.json();
-  console.log(weatherData);
   const selectedData = getDatas(weatherData);
   renderData(selectedData);
 }
