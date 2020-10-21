@@ -10,4 +10,4 @@ export {
   location,
   temp,
   description,
-}
+};
