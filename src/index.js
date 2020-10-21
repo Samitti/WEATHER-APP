@@ -23,7 +23,7 @@ const togleTemp = (sym) => {
 const getDatas = (weatherData) => {
   const city = weatherData.name;
   const { country } = weatherData.sys;
-  currentTemp = weatherData.main.temp;
+  currentTemp = Math.round(weatherData.main.temp);
   const temperature = currentTemp;
   const { description } = weatherData.weather[0];
 
